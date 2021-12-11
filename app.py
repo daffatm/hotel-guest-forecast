@@ -6,13 +6,12 @@ import plotly
 import plotly.express as px
 from datetime import datetime
 
-
 app = Flask(__name__)
 
 model_file = open('model.pkl', 'rb')
 model = pickle.load(model_file, encoding='bytes')
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
     return render_template('index.html')
 
