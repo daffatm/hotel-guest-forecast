@@ -41,7 +41,7 @@ def predict():
     data = pd.DataFrame({'Datetime': idx, 'Jumlah Tamu': pred_tamu})
     print(data)
     
-    figure = px.line(data, x='Datetime', y='Jumlah Tamu')
+    figure = px.line(data, x='Datetime', y='Jumlah Tamu', width=800, height=400)
     graphJson = json.dumps(figure, cls=plotly.utils.PlotlyJSONEncoder)
 
     return render_template('index.html', graphJson = graphJson)
