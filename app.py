@@ -12,7 +12,7 @@ app = Flask(__name__)
 model_file = open('model.pkl', 'rb')
 model = pickle.load(model_file, encoding='bytes')
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
 
