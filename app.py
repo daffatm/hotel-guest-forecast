@@ -26,7 +26,7 @@ def predict():
     last = datetime.strptime(last, '%Y-%m')
     selisih = (last.year - first.year) * 12 + (last.month - first.month)
     
-    pred = model.predict(start=len(df)-1, end=len(df-1)+selisih, typ='levels')
+    pred = model.predict(start=len(df)-1, end=len(df-1)+selisih+1, typ='levels')
     
     # melakukan shift data -1
     idx = pred.index.values

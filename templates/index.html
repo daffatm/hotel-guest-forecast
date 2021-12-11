@@ -35,10 +35,10 @@
                     <div class="card-body bg-light">
                         <form action="{{ url_for('predict') }}" method="post">
                             <label for="fistDate" class="form-label">From Date :</label>
-                            <input id="firstDate" name="firstDate" class="form-control" type="month" min='10-2021'>
+                            <input id="firstDate" name="firstDate" class="form-control" type="month" min="2021-10">
                             <div id="minDate" class="form-text">Bulan Minimum : Oktober 2021</div>
                             <label for="lastDate" class="form-label">To Date :</label>
-                            <input id="lastDate" name="lastDate" class="form-control" type="month" min='10-2021'>
+                            <input id="lastDate" name="lastDate" class="form-control" type="month" min="2021-10">
                             <div id="minDate" class="form-text">Keakuratan prediksi akan semakin menurun sesuai jangka waktu</div>
                             <div class="row mt-4 px-3">
                                 <button type="submit" class="btn btn-primary">PREDIKSI</button>
