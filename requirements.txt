@@ -1,5 +1,6 @@
 flask
 gunicorn
 scikit-learn
+statsmodels
 pandas
 plotly
