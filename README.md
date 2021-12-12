@@ -8,8 +8,15 @@ Repository ini berisi semua file yang dibutuhkan untuk melakukan deployment mode
 
 ## Folder, file, dan kegunaannya
 
+- notebook/
+    - Data/
+        - JakartaHotel.csv --> Data tamu hotel bintang pada provinsi DKI Jakarta yang telah melalui proses Data preparation
+        - TamuHotelBintang.xlsx --> Data tamu hotel bintang seluruh provinsi yang belum melalui proses apapun (Data asli)
+    - Data Preparation.ipynb --> Notebook yang berisi proses Data Preparation yang kami lakukan pada Data
+    - Modelling.ipynb --> Notebook yang berisi proses modelling ARIMA.
 - templates/
     - index.html --> Berisi template website
+- ProcFile --> Pada aplikasi  Command pertama yang dijalankan oleh aplikasi saat startup pada platform Heroku
 - app.py --> Berisi konfigurasi route untuk API
 - model.pkl --> Model ARIMA yang sudah di-training
 - requirements.txt --> Berisi daftar dependency/package Python yang diperlukan untuk menjalankan API dan model ARIMA
