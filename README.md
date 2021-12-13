@@ -16,7 +16,7 @@ Repository ini berisi semua file yang dibutuhkan untuk melakukan deployment mode
     - Modelling.ipynb --> Notebook yang berisi proses modelling ARIMA.
 - templates/
     - index.html --> Berisi template website
-- ProcFile --> Pada aplikasi  Command pertama yang dijalankan oleh aplikasi saat startup pada platform Heroku
+- ProcFile --> File untuk menjalankan python web app pada heroku
 - app.py --> Berisi konfigurasi route untuk API
 - model.pkl --> Model ARIMA yang sudah di-training
 - requirements.txt --> Berisi daftar dependency/package Python yang diperlukan untuk menjalankan API dan model ARIMA
